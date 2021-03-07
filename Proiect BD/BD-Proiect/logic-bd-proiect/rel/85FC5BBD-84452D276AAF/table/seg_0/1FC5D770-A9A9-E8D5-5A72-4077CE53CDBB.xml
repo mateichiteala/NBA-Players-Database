@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FC5D770-A9A9-E8D5-5A72-4077CE53CDBB" name="Pozitii">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>8FE5DD62-89A7-B555-6EEE-BDE0E047806C</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pozitie" id="02C2530D-AF38-E0F8-32EF-F937D3686BD7">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>1A339754-C1EB-B820-EDD3-EE261AA6ED05</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pozitie" id="044E13E5-7966-CBDE-0396-3204AE16F621">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>22931BA5-4E88-7CAF-EBB1-C0F19D7FDA2D</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="aruncator" description=""/>
+<valueDef value="conducator joc" description=""/>
+<valueDef value="extrema" description=""/>
+<valueDef value="pivot" description=""/>
+<valueDef value="pivot mic" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4505CF0-4204-E60E-58AD-F19A78A86D34" name="Pozitii_PK_UK">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>D04AB749-156B-33AF-681D-61C6E18A3C5A</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02C2530D-AF38-E0F8-32EF-F937D3686BD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="534D1317-E960-A26C-42CD-8BC352D0B3E9" name="Key_2v1">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>3E86D9A6-4C70-5858-54AA-118C0DABF9B5</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="044E13E5-7966-CBDE-0396-3204AE16F621"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

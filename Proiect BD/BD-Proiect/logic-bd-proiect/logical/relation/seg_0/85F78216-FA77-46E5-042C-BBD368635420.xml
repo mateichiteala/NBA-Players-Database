@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="echip_juci_fk" directorySegmentName="seg_0" id="85F78216-FA77-46E5-042C-BBD368635420">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 16:48:07 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<sourcePk>46028907-3F39-A829-47C3-2A4BFDBB1094</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>este la </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>71E59F5C-FFE9-FDE5-22D3-28240F385C38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B56E5A8C-809A-C31B-8CA8-F51A42691A7E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

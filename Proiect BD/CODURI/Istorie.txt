@@ -1,0 +1,245 @@
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Anthony'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Miami Heat'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2018', '30-JUN-2020', 200);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kentavious'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'extrema'), 
+'10-OCT-2017', '30-JUN-2019', 200);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kentavious'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'extrema'), 
+'10-OCT-2019', '30-JUN-2020', 70);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'JaVale'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2015', '30-JUN-2017', 50);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'JaVale'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2017', '30-JUN-2020', 200);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Dwight'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Miami Heat'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2015', '30-JUN-2020', 230);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kemba'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Miami Heat'),  
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2015', '30-JUN-2017', 180);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Marcus'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'aruncator'), 
+'10-OCT-2015', '30-JUN-2017', 90);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Marcus'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Miami Heat'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2017', '30-JUN-2019', 150);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Tristan'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2015', '30-JUN-2019',300);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Daniel'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2018', '30-JUN-2019', 50);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Jimmy'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2015', '30-JUN-2017', 120);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Jimmy'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'extrema'), 
+'10-OCT-2017', '30-JUN-2019', 150);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Bam'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2017', '30-JUN-2019', 120);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Goran'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2015', '30-JUN-2017', 70);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Goran'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2017', '30-JUN-2018', 90);
+
+INSERT INTO istorie(id_jucator, id_echipa,id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Goran'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2018', '30-JUN-2019', 80);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Andre'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'),  
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot mic'), 
+'10-OCT-2015', '30-JUN-2016', 60);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Andre'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot mic'), 
+'10-OCT-2016', '30-JUN-2019', 160);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Jae'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot mic'), 
+'10-OCT-2015', '30-JUN-2016', 60);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Jae'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot mic'), 
+'10-OCT-2016', '30-JUN-2019', 160);
+
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Andrew'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'extrema'), 
+'10-OCT-2016', '30-JUN-2019', 80);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'James'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Brooklyn Nets'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2015', '30-JUN-2019', 260);
+
+INSERT INTO istorie(id_jucator, id_echipa,  id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kelly'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Golden State'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2016', '30-JUN-2018', 40);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kelly'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Golden State'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2018', '30-JUN-2019', 70);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kevin'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Golden State'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'extrema'), 
+'10-OCT-2018', '30-JUN-2020', 260);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kyrie'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'),  
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2016', '30-JUN-2017', 80);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Kyrie'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Boston Celtics'),  
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc'), 
+'10-OCT-2017', '30-JUN-2020', 110);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Jarret'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2016', '30-JUN-2017', 80);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Jarret'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Brooklyn Nets'),  
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2017', '30-JUN-2020', 102);
+
+INSERT INTO istorie(id_jucator, id_echipa, id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'DeAndre'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Miami Heat'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot'), 
+'10-OCT-2016', '30-JUN-2017', 80);
+
+INSERT INTO istorie(id_jucator, id_echipa,id_pozitie, data_inceput, data_final, nr_meciuri)
+VALUES(
+(SELECT id_jucator FROM jucatori WHERE prenume = 'Spencer'),
+(SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers'), 
+(SELECT id_pozitie FROM pozitii WHERE pozitie = 'pivot mic'), 
+'10-OCT-2016', '30-JUN-2018', 90);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

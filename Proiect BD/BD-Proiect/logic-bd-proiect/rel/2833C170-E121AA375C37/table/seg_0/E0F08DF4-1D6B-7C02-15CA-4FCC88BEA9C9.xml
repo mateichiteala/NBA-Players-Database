@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0F08DF4-1D6B-7C02-15CA-4FCC88BEA9C9" name="Stadion">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>AF65D87D-E10A-6199-1614-778F3E6C03F0</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_stadion" id="90D0DC50-44F4-F5DA-22B3-BF2F9B797158">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>DFB1BF74-68B4-2CDD-CEB3-EDE07822525C</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_stadion" id="4888F3FD-6246-D031-0B9A-0CD3922A6A69">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>FD7A7164-6101-DDF6-49EA-411B74948B03</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cost" id="51CEEB24-8AC1-0278-B5AC-5C4D4CF868E1">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>4AE557ED-7D53-DC49-2873-B109246D28E5</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_echipa" id="20B4FF09-F090-63DD-98B7-86FA16BECA27">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>65B3F916-D5BA-8530-F53C-36BB1A6FFB89</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B36ACE2B-43E6-A913-CCA0-89B406CE865B" referredColumn="0478CA62-D1BB-D43F-D6E6-2E37A20BD4EF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BF9EE09-22B1-72E9-67D1-181C6531E071" name="Stadion_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>E7620FFD-C3A9-554A-77D4-14187F2B24C3</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90D0DC50-44F4-F5DA-22B3-BF2F9B797158"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D698BF2D-5CEF-BBEE-A0CB-45C7820D83CC" name="Stadion__IDX">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BA4455E9-F85C-5A3F-B166-83D01C9AB21E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="20B4FF09-F090-63DD-98B7-86FA16BECA27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4701BD7-33D8-3CAB-64C0-A4529D127C07" name="echipa_stadion_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>BA4455E9-F85C-5A3F-B166-83D01C9AB21E</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20B4FF09-F090-63DD-98B7-86FA16BECA27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

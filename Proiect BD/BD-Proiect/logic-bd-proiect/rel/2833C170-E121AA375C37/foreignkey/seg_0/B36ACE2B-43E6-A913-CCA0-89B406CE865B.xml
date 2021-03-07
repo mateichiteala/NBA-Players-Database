@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B36ACE2B-43E6-A913-CCA0-89B406CE865B" containerWithKeyObject="E0F08DF4-1D6B-7C02-15CA-4FCC88BEA9C9" localFKIndex="D4701BD7-33D8-3CAB-64C0-A4529D127C07" name="echipa_stadion_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>BA4455E9-F85C-5A3F-B166-83D01C9AB21E</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<referredTableLongName>Echipe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B3688D39-46DF-3180-E256-129D08929795</referredTableID>
+<keyObject>81DD1765-C5BF-12DC-3070-F315AC5461B4</keyObject>
+<referredKeyID>81DD1765-C5BF-12DC-3070-F315AC5461B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_echipa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,10 @@
+INSERT INTO echipe(nume_echipa,buget,nr_jucatori,locatia)
+VALUES('Los Angeles Lakers',100,7,'California');
+INSERT INTO echipe(nume_echipa,buget,nr_jucatori,locatia)
+VALUES('Boston Celtics',100,8,'Massachusetts');
+INSERT INTO echipe(nume_echipa,buget,nr_jucatori,locatia)
+VALUES('Miami Heat',100,6,'Florida');
+INSERT INTO echipe(nume_echipa,buget,nr_jucatori,locatia)
+VALUES('Golden State',100,6,'California');
+INSERT INTO echipe(nume_echipa,buget,nr_jucatori,locatia)
+VALUES('Brooklyn Nets',100,6,'New York');

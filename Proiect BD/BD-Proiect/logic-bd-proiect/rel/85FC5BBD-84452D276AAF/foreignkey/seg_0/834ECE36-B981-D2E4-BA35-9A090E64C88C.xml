@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="834ECE36-B981-D2E4-BA35-9A090E64C88C" containerWithKeyObject="9C42D76E-BF5D-CB4A-B89A-D67CECCB978D" localFKIndex="5E43F756-6590-9CDF-2CC4-BAB63C34F6D1" name="echip_juci_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>85F78216-FA77-46E5-042C-BBD368635420</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<referredTableLongName>Echipe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>36F243D4-18FB-4351-3B26-4DE5F427C8B5</referredTableID>
+<keyObject>13F40685-8D66-5955-0138-D44D849CD18F</keyObject>
+<referredKeyID>13F40685-8D66-5955-0138-D44D849CD18F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_echipa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

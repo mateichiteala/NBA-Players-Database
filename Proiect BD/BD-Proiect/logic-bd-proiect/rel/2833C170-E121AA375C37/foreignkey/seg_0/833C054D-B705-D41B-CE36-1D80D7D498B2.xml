@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="833C054D-B705-D41B-CE36-1D80D7D498B2" containerWithKeyObject="B3688D39-46DF-3180-E256-129D08929795" localFKIndex="F74E5B5B-26A5-BAA4-07CD-2BBABD15E014" name="calitati_echipe_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>D9870BAF-E0AC-CDDF-3385-65446620B8FD</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<referredTableLongName>Calitati</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97513D37-6848-3F90-65A8-1887A83A9816</referredTableID>
+<keyObject>1A72F641-AF3C-FC19-981C-82C38FB5BA52</keyObject>
+<referredKeyID>1A72F641-AF3C-FC19-981C-82C38FB5BA52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_calitate</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

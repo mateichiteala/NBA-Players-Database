@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1FE7B7C-096B-A1DF-ED97-0730B4970683" name="Sponsor">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>CFC5FBC4-30BC-8B23-ABE3-2C2A1086C51F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sponsor" id="2E1391DD-34AA-4E25-08E1-1111149EA2FF">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>E848C5DA-1041-1BE7-85B2-04E5F82CEE9E</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="money" id="328700B7-CEB2-3473-D6D6-CC064E93B36D">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>E1E748B7-6A4F-5BED-A9F8-0BBAAF6CBE6B</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_sponsor" id="B366AB70-6F44-02C8-4684-4734C159E9B0">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>3757286D-AB1B-77D8-0E56-BC6A99A59687</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C090D2BF-13BA-0D86-E27D-9369FDD57E0C" name="Sponsor_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>CABF6763-D582-746D-B6A1-7CF9C87929B0</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E1391DD-34AA-4E25-08E1-1111149EA2FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36F243D4-18FB-4351-3B26-4DE5F427C8B5" name="Echipe">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>71E59F5C-FFE9-FDE5-22D3-28240F385C38</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_echipa" id="43D1588C-A34C-7436-6076-B3977842C27B">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>7C019DF3-CC26-F20D-263A-ED3B9691C626</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_echipa" id="72E1D0F9-067B-D9D4-93E2-47B642B188D7">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>7989868A-5C0A-449E-72F4-010800453B7F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_echipa)&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="buget" id="4274EDE1-0C2F-E274-81EB-A217466245BD">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>78B308B5-6DCB-5E82-DD0A-FBB2C15B52CF</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>100</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="nr_jucatori" id="6F14508B-F9F7-7432-1F07-D0B0835AD66B">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>142DA3AC-60FA-31E9-1F95-49B0AEAE08A8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_jucatori &gt;= 5"/>
+</checkConstraint>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="locatia" id="46CC4D7A-1587-757D-84B7-D7C3F3DBE0A6">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>11406856-988C-FDA1-9024-978958E7F2B7</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(locatia) &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13F40685-8D66-5955-0138-D44D849CD18F" name="Echipe_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>46028907-3F39-A829-47C3-2A4BFDBB1094</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43D1588C-A34C-7436-6076-B3977842C27B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF2A9F95-836F-A56F-8786-F2961B823769" name="Key_2">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>197B0A14-0261-B063-7A36-06696BF5D03F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72E1D0F9-067B-D9D4-93E2-47B642B188D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

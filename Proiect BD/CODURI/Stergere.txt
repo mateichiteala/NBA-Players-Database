@@ -1,0 +1,16 @@
+drop table "MATEI"."CALITATI" cascade constraints PURGE;
+drop table "MATEI"."DETALII_JUCATORI" cascade constraints PURGE;
+drop table "MATEI"."ECHIPE" cascade constraints PURGE;
+drop table "MATEI"."ISTORIE" cascade constraints PURGE;
+drop table "MATEI"."JUCATORI" cascade constraints PURGE;
+drop table "MATEI"."POZITII" cascade constraints PURGE;
+drop table "MATEI"."STADION" cascade constraints PURGE;
+
+
+
+drop sequence "MATEI"."CALITATI_ID_CALITATE_SEQ";
+drop sequence "MATEI"."ECHIPE_ID_ECHIPA_SEQ";
+drop sequence "MATEI"."JUCATORI_ID_JUCATOR_SEQ";
+drop sequence "MATEI"."POZITII_ID_POZITIE_SEQ";
+drop sequence "MATEI"."STADION_ID_STADION_SEQ";
+drop sequence "MATEI"."ISTORIE_ID_ISTORIE_SEQ";

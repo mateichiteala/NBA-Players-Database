@@ -1,0 +1,195 @@
+-- jucatori straini(care nu sunt din US)
+SELECT j.prenume, j.nume, d.tara FROM jucatori j, detalii_jucatori d
+WHERE  j.id_jucator = d.id_jucator AND tara != 'US' ;
+
+--jucatori nascuti intre 1980 - 1990
+SELECT j.prenume, j.nume, d.data_nasterii
+FROM jucatori j, detalii_jucatori d
+WHERE j.id_jucator = d.id_jucator AND (d.data_nasterii LIKE '%-8%' OR d.data_nasterii  LIKE '%-90');
+
+--jucatori care au email-ul si numarul de telefon diferit de NULL
+SELECT j.prenume, j.nume, d.email, d.telefon
+FROM jucatori j, detalii_jucatori d
+WHERE j.id_jucator = d.id_jucator AND(d.email IS NOT NULL AND d.telefon IS NOT NULL);
+
+--jucatorii la care cnp-ul incepe cu 1, se termina cu 4 si are a 3 a cifra 3
+SELECT j.prenume, j.nume, d.cnp 
+FROM jucatori j, detalii_jucatori d
+WHERE j.id_jucator = d.id_jucator AND d.cnp LIKE '1_3%4';
+
+
+--jucatori din echipa Los Angeles Lakers
+SELECT j.prenume, j.nume, e.nume_echipa echipa 
+FROM jucatori j, echipe e
+WHERE j.id_echipa = (SELECT id_echipa FROM echipe WHERE nume_echipa = 'Los Angeles Lakers')
+AND j.id_echipa = e.id_echipa;
+
+--echipa/echipele cu cel mai mare buget
+SELECT nume_echipa,buget
+FROM echipe
+WHERE buget = (SELECT MAX(buget) FROM echipe);
+
+--echipa cu cei mai multi jucatori din fiecare stat(cum fac ca sa afisez si echipa???)
+SELECT MAX(nr_jucatori), locatia
+FROM echipe
+GROUP BY locatia;
+
+--echipe cu bugetul sub medie
+SELECT a.nume_echipa ,a.buget
+FROM echipe a
+WHERE a.buget < (SELECT AVG(buget) FROM echipe);
+
+--jucatorii care sunt de vanzare de la Golden State
+SELECT j.prenume, j.nume, e.nume_echipa echipa 
+FROM jucatori j, echipe e
+WHERE j.id_echipa = (SELECT id_echipa FROM echipe WHERE nume_echipa = 'Golden State')
+AND j.id_echipa = e.id_echipa AND j.status = 1;
+
+--jucatorii care au jucat la Miami Heat
+SELECT DISTINCT j.prenume, j.nume
+FROM istorie i, jucatori j
+WHERE i.id_jucator = j.id_jucator
+AND j.id_echipa = (SELECT id_echipa FROM echipe WHERE nume_echipa = 'Miami Heat');
+
+-- cariera lui Jimmy Butler
+SELECT j.prenume, j.nume, e.nume_echipa, i.nr_meciuri, c.nume_calitate, p.pozitie,i.data_inceput, i.data_final 
+FROM istorie i, jucatori j, echipe e, calitati c, pozitii p
+WHERE i.id_jucator = j.id_jucator
+AND (j.prenume = 'Jimmy' AND j.nume = 'Butler') 
+AND( e.id_echipa = i.id_echipa)
+AND c.id_calitate = i.id_calitate AND p.id_pozitie = i.id_pozitie;
+
+--jucatorii care au jucat la Los Angeles Lakers
+SELECT DISTINCT j.prenume, j.nume, e.nume_echipa
+FROM istorie i, jucatori j, echipe e
+WHERE i.id_jucator = j.id_jucator
+AND( e.id_echipa = i.id_echipa AND e.id_echipa = 1);
+
+--jucatorii care au jucat la Los Angeles Lakers si la Boston Celtics
+SELECT DISTINCT j.prenume, j.nume
+FROM istorie i, jucatori j, echipe e
+WHERE i.id_jucator = j.id_jucator
+AND( e.id_echipa = i.id_echipa AND (e.id_echipa = 1 OR e.id_echipa = 3));
+
+-- Jucatorul cu cele mai multe meciuri jucate la Los Angeles Lakers in toata cariera
+WITH
+a AS(
+    SELECT  j.prenume prenume, SUM(i.nr_meciuri) sum_meciuri
+    FROM istorie i, jucatori j, echipe e
+    WHERE i.id_jucator = j.id_jucator
+    AND( e.id_echipa = i.id_echipa AND e.id_echipa = 1) 
+    GROUP BY i.id_jucator, j.prenume
+    )
+SELECT *
+FROM a 
+WHERE sum_meciuri = (SELECT MAX(sum_meciuri) FROM a);
+
+-- jucator/jucatori care au fost si conductori de joc si extrema in cariera
+WITH
+a AS(
+SELECT DISTINCT j.prenume prenume
+FROM jucatori j, istorie i
+WHERE  j.id_jucator = i.id_jucator
+AND i.id_pozitie = (SELECT id_pozitie FROM pozitii WHERE pozitie = 'conducator joc')
+),
+b AS(
+SELECT DISTINCT j.prenume prenume
+FROM jucatori j, istorie i
+WHERE  j.id_jucator = i.id_jucator
+AND i.id_pozitie = (SELECT id_pozitie FROM pozitii WHERE pozitie = 'extrema')
+)
+SELECT a.prenume 
+FROM a, b
+WHERE a.prenume = b.prenume;
+
+--jucatorii doar cu calitatea 'pasator'
+WITH
+b AS(
+SELECT DISTINCT j.prenume prenume, j.id_jucator id
+FROM jucatori j, istorie i
+WHERE  j.id_jucator = i.id_jucator
+AND i.id_calitate IN (SELECT id_calitate FROM calitati WHERE nume_calitate != 'pasator')
+),
+a AS(
+SELECT DISTINCT j.prenume prenume, j.id_jucator id
+FROM jucatori j, istorie i
+WHERE  j.id_jucator = i.id_jucator
+AND i.id_calitate = (SELECT id_calitate FROM calitati WHERE nume_calitate = 'pasator')
+)
+SELECT a.prenume 
+FROM a
+WHERE a.id NOT IN(SELECT id FROM b) ;
+
+--cel mai scump stadion
+SELECT nume_stadion, cost
+FROM stadion
+WHERE cost = (SELECT MAX(cost) FROM stadion);
+
+
+--genereaza err(nu respecta regex)
+UPDATE detalii_jucatori
+SET email = 'stephencurry.com'
+WHERE id_jucator = 23;
+--fara err
+UPDATE detalii_jucatori
+SET email = 'stephncur@yahoo.com'
+WHERE id_jucator = 23;
+
+--Nu respecta sa fie de 10 cifre telefonul
+UPDATE detalii_jucatori
+SET telefon = 078932857268
+WHERE id_jucator = 22;
+--fara err
+UPDATE detalii_jucatori
+SET telefon = 07893287268
+WHERE id_jucator = 22;
+
+--Stergere jucator din baza de date
+-- Err(nu se poate sterge este foreign key)
+DELETE 
+FROM jucatori
+where id_jucator = 46;
+
+--fara err
+DELETE 
+FROM istorie
+where id_jucator = 46;
+
+DELETE 
+FROM jucatori
+where id_jucator = 46;
+
+
+Setare salariu la o echipa
+-- Salariul trebuie sa fie > 0
+UPDATE jucatori
+SET salariu = -1
+WHERE id_jucator = 22;
+--fara err
+UPDATE jucatori
+SET salariu = -1
+WHERE id_jucator = 22;
+
+--Setam numarul de jucatori
+--echipa trebuie sa aiba minim 5 jucatori
+UPDATE echipe 
+SET nr_jucatori = 1
+WHERE id_echipa = 2;
+
+--err(pozitie este cheie unica)
+INSERT INTO pozitii(pozitie)
+VALUES('extrema');
+
+--err(nu respecta check constraint)
+INSERT INTO pozitii(pozitie)
+VALUES('atacant');
+
+--adaugam coloana Antrenor in tabela Istorie
+ALTER TABLE antrenor
+ADD(antrenor VARCHAR(20));
+
+
+
+
+
+

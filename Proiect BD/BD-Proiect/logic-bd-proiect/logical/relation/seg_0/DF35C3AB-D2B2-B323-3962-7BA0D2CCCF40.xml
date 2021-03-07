@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="juc_det_fk" directorySegmentName="seg_0" id="DF35C3AB-D2B2-B323-3962-7BA0D2CCCF40">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 16:49:04 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="BEE68BEC-5C6A-CD46-E837-2F7FAD5846C8" value="true"/>
+<item key="F77E3D28-923E-7545-341E-66C7422E5207" value="true"/>
+<item key="B8F0C10A-9CDA-F7A7-4039-7CB2CCF2E3C1" value="true"/>
+</engineerTo>
+<sourcePk>14837692-B9B6-9599-090A-9D8437EAAA90</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>au</nameOnSource>
+<nameOnTarget>sunt ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B56E5A8C-809A-C31B-8CA8-F51A42691A7E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E33CBAAF-B46D-DCDE-8125-FA165F76574F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5D381637-E370-D557-1A47-325D345CA83D" containerWithKeyObject="AA0014CA-6A05-3618-B38F-D1C5730BF392" localFKIndex="A4683A8E-F36D-8344-DB08-B1249CF7D2EF" name="juci_calit_fk_Jucatori_FK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>5FCE7187-89DF-2913-7752-031B3C535E84</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<referredTableLongName>Jucatori</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>24AC4D51-99E4-A6ED-6906-DEF073F35832</referredTableID>
+<keyObject>68A198ED-D943-205A-F3C3-E3679E392C2E</keyObject>
+<referredKeyID>68A198ED-D943-205A-F3C3-E3679E392C2E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_jucator</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

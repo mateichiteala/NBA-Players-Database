@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA0014CA-6A05-3618-B38F-D1C5730BF392" name="juci_calit_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Jucatori_id_jucator" id="60819B7D-865B-35A2-7D2C-D996650D395B">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D381637-E370-D557-1A47-325D345CA83D" referredColumn="91E20D85-CA13-68B6-618C-FE82BD2DAB12"/>
+</associations>
+</Column>
+<Column name="Calitati_id_calitate" id="7B468904-6A00-BF57-864D-884C1D6ED75B">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D3A9619-BD51-4E5C-BB4A-43D93B49B6F4" referredColumn="42015E37-5117-9D93-FE02-D300FAF580B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A9B9021-7749-B613-7E19-7084DBB747F1" name="juci_calit_fk_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60819B7D-865B-35A2-7D2C-D996650D395B"/>
+<colUsage columnID="7B468904-6A00-BF57-864D-884C1D6ED75B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4683A8E-F36D-8344-DB08-B1249CF7D2EF" name="juci_calit_fk_Jucatori_FK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>5FCE7187-89DF-2913-7752-031B3C535E84</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60819B7D-865B-35A2-7D2C-D996650D395B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3631EE2-8300-8C85-5681-6B7D27862940" name="juci_calit_fk_Calitati_FK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>5FCE7187-89DF-2913-7752-031B3C535E84</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B468904-6A00-BF57-864D-884C1D6ED75B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

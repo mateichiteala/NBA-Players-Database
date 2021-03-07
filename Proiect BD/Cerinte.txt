@@ -1,0 +1,25 @@
+Tema proiectului: aplicatie pentru gestionarea unor echipe de basket
+
+Specificatii:
+
+Echipe:
+Fiecare echipa are maxim 15 jucatori si minim 5 jucatori
+Toate echipele au acelasi buget
+
+
+Jucatori:
+Jucatorii pot proveni din mai multe tari.
+Sunt identificati prin nume, data nasterii, id special
+Jucatorii pot avea mai multe calificari(pot juca diferite pozitii pe teren)
+ex: conducator de joc, extrema, pivot, aruncator
+Jucatorii nu pot juca la mai multe echipe in acelasi timp
+Optional: Jucatorii pot avea diferite calitati(buni aruncatori de la distanta/sub cos, pasatori,aparatori)
+Contractele jucatorilor este de maxim 5 ani.Si salariul maxim pentru un jucator este acelasi pentru fiecare echipa.
+
+Transfer:
+O echipa plate suma contractului daca acesta este disponibil.
+
+Istoric:
+Orice echipa poate sa se intereseze de cariera jucatorului accesand o baza de date cu informatii specifice
+
+

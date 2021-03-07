@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="logic-bd-proiect" id="7B3DD8F5-5970-FD9C-932A-727A5B62DF48" version="3.5">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:14:25 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7B3DD8F5-5970-FD9C-932A-727A5B62DF48</designId>
+</OSDM_Design>

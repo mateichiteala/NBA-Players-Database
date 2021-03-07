@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71E59F5C-FFE9-FDE5-22D3-28240F385C38" name="Echipe">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:00:29 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_echipa" id="7C019DF3-CC26-F20D-263A-ED3B9691C626">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:01:32 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_echipa" id="7989868A-5C0A-449E-72F4-010800453B7F">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:00:36 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_echipa)&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="buget" id="78B308B5-6DCB-5E82-DD0A-FBB2C15B52CF">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:01:57 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>100</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="nr_jucatori" id="142DA3AC-60FA-31E9-1F95-49B0AEAE08A8">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:07:55 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_jucatori &gt;= 5"/>
+</checkConstraint>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="locatia" id="11406856-988C-FDA1-9024-978958E7F2B7">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:02:15 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(locatia) &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46028907-3F39-A829-47C3-2A4BFDBB1094" name="Echipe PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:01:05 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7C019DF3-CC26-F20D-263A-ED3B9691C626</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="197B0A14-0261-B063-7A36-06696BF5D03F" name="Key_2">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 11:30:08 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<newElementsIDs>7989868A-5C0A-449E-72F4-010800453B7F</newElementsIDs>
+<usedAttributes>
+<attributeRef>7989868A-5C0A-449E-72F4-010800453B7F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

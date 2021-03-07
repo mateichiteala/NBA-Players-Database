@@ -1,0 +1,13 @@
+conn = cx_Oracle.connect('matei/bd059@//localhost:1521/xe')
+print(conn.version)
+# create cursor
+cursor = conn.cursor()
+
+sql_create = """
+CREATE TABLE TEST(
+    FIRST_NAME VARCHAR(20),
+    LAST_NAME  VARCHAR(20)
+)
+"""
+cursor.execute(sql_create)
+print('Table Created')

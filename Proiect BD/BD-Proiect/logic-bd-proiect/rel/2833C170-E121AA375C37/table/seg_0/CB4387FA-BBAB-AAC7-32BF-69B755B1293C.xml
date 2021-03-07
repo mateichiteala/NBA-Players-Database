@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB4387FA-BBAB-AAC7-32BF-69B755B1293C" name="Detalii_jucatori">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>E33CBAAF-B46D-DCDE-8125-FA165F76574F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="serie_act_identificare" id="4734E590-6273-FDF5-BEB0-94C1FF0497C2">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>FA397672-4EC5-0E06-BA59-35F8C97E258A</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nasterii" id="FE224DE9-475C-4F78-B9FA-DA0EB1C1B1DA">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>4C9A49CC-1DBA-BB6D-C46E-C22517CF877F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tara" id="F0CDA64A-921D-FF95-0D44-D8B846909666">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>2E8F9B53-FAA3-047D-078C-B3667B3D5529</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="F31A317F-3E04-B51F-3F2D-582DB63F2C82">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>64A77B8C-6E99-AC67-11F5-7AA6A68634D1</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa_domiciliu" id="E646644B-52CA-FFA7-9943-F76F2FF62644">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>5052DB5B-3D45-D7F0-116E-A6CE635EECBF</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_jucator" id="44C43BAE-CDF1-6F0D-2A38-20857ED6D110">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>20853697-1D6A-1C07-8E92-34E22C6D62DD</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F4DFB38-4D10-C6D8-E1C0-43FE8BA9E6BC" referredColumn="91E20D85-CA13-68B6-618C-FE82BD2DAB12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B221884-FA22-B399-9DC2-34CD0F367AFA" name="Detalii_jucatori_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>3DB96E48-43D5-7ABD-0766-BD4E511871C1</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4734E590-6273-FDF5-BEB0-94C1FF0497C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73C62251-5908-F065-0744-3DDE4F3A6A38" name="Detalii_jucatori__IDX">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DF35C3AB-D2B2-B323-3962-7BA0D2CCCF40</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="44C43BAE-CDF1-6F0D-2A38-20857ED6D110"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BFE07E4-8823-6EB7-58D4-E80A32BE1D37" name="juc_det_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 07:28:10 UTC</createdTime>
+<generatorID>DF35C3AB-D2B2-B323-3962-7BA0D2CCCF40</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44C43BAE-CDF1-6F0D-2A38-20857ED6D110"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

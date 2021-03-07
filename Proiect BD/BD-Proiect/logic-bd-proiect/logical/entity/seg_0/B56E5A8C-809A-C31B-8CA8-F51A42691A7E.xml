@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B56E5A8C-809A-C31B-8CA8-F51A42691A7E" name="Jucatori">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:35:55 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_jucator" id="7CBB4B82-8BFE-7E86-EB9F-EAD85AEEE220">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:37:19 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_echipa" id="05497E64-3953-C307-4988-9C33D3E245A4">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 16:48:07 UTC</createdTime>
+<generatorID>85F78216-FA77-46E5-042C-BBD368635420</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<referedAttribute>7C019DF3-CC26-F20D-263A-ED3B9691C626</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="B267894D-A4BC-3F4F-66AA-BB9261C5F68E">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:36:15 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume) &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="09993F82-0A24-B441-0452-9B36364710F4">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 15:36:47 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salariu" id="CA63FD7F-8261-E85B-C23C-760B0FEC5E5A">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 11:03:37 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="salariu&gt;0
+"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="B6AD3E64-AD8B-D7E7-1EA1-19B3E58F0B7F">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 16:37:56 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14837692-B9B6-9599-090A-9D8437EAAA90" name="Jucatori PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:39:14 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7CBB4B82-8BFE-7E86-EB9F-EAD85AEEE220</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="45F63768-5322-6CD9-10FB-8A6DC467479B" name="jucatori_id_echipa_pk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-12-05 07:40:38 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="false"/>
+</engineerTo>
+<newElementsIDs>7CBB4B82-8BFE-7E86-EB9F-EAD85AEEE220</newElementsIDs>
+<usedAttributes>
+<attributeRef>7CBB4B82-8BFE-7E86-EB9F-EAD85AEEE220</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

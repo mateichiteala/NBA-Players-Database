@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="457CFF2B-08F1-A5BE-11C8-E825738A8873" containerWithKeyObject="DB068CD0-B7DB-AFE4-1104-97850EDD1093" localFKIndex="54C4FC99-72B0-B926-7135-7139792FFC99" name="sponsor_echipa_fk_Sponsor_FK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>CDD92178-5272-E0E3-1A32-074E8C253FE8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<referredTableLongName>Sponsor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A1FE7B7C-096B-A1DF-ED97-0730B4970683</referredTableID>
+<keyObject>C090D2BF-13BA-0D86-E27D-9369FDD57E0C</keyObject>
+<referredKeyID>C090D2BF-13BA-0D86-E27D-9369FDD57E0C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_sponsor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

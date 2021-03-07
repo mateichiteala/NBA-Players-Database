@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BF5A9AF-1FE3-5A7B-F5D3-207AFF424165" name="Istorie">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:00:03 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_istorie" id="AD18F121-C29A-A2AC-B52B-306694869541">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:11:51 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_jucator" id="F82341DF-717B-AB92-680B-100952261CC8">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:05:49 UTC</createdTime>
+<generatorID>0DE0958C-2BB1-38BB-B56E-616DE3AF73DB</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<referedAttribute>7CBB4B82-8BFE-7E86-EB9F-EAD85AEEE220</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_echipa" id="EF2FD1CE-D25C-C877-0342-E9992D1DE973">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:07:03 UTC</createdTime>
+<generatorID>ABB0436B-7378-DD9A-32F1-5C1EBEB58AB8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<referedAttribute>7C019DF3-CC26-F20D-263A-ED3B9691C626</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_meciuri" id="3CAD865E-3041-6828-D8B5-034EA341E0A3">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:11:21 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_meciuri &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pozitie" id="35C3F19C-BE68-2F95-860F-80AEDF7429A9">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 11:25:38 UTC</createdTime>
+<generatorID>B7DE9723-0BD0-39E0-2013-BE5D545BFBA7</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<referedAttribute>1A339754-C1EB-B820-EDD3-EE261AA6ED05</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_inceput" id="FA2FC699-A253-50D4-DC85-7C955B7CCB29">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:54:16 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_final" id="8D5A7AF0-625F-EFA2-EE8F-F03530F60913">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:54:53 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6168B6D0-A44B-4539-B808-9ADC86D6683E" name="Istorie PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:00:50 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="85FC5BBD-38F4-9AF3-B769-84452D276AAF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AD18F121-C29A-A2AC-B52B-306694869541</attributeRef>
+<attributeRef>FA2FC699-A253-50D4-DC85-7C955B7CCB29</attributeRef>
+<attributeRef>8D5A7AF0-625F-EFA2-EE8F-F03530F60913</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

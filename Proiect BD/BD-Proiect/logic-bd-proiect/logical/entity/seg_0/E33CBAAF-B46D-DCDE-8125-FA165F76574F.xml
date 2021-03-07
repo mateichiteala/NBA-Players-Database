@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E33CBAAF-B46D-DCDE-8125-FA165F76574F" name="Detalii_jucatori">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:39:32 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cnp" id="FA397672-4EC5-0E06-BA59-35F8C97E258A">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 06:41:06 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cnp) = 13"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_jucator" id="20853697-1D6A-1C07-8E92-34E22C6D62DD">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 16:49:04 UTC</createdTime>
+<generatorID>DF35C3AB-D2B2-B323-3962-7BA0D2CCCF40</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<referedAttribute>7CBB4B82-8BFE-7E86-EB9F-EAD85AEEE220</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nasterii" id="4C9A49CC-1DBA-BB6D-C46E-C22517CF877F">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:39:41 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tara" id="2E8F9B53-FAA3-047D-078C-B3667B3D5529">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:40:12 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(tara) &gt; 0
+"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="64A77B8C-6E99-AC67-11F5-7AA6A68634D1">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:40:53 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(telefon) = 10 "/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="5052DB5B-3D45-D7F0-116E-A6CE635EECBF">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 10:41:21 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3DB96E48-43D5-7ABD-0766-BD4E511871C1" name="Detalii_jucatori PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-19 16:28:45 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>FA397672-4EC5-0E06-BA59-35F8C97E258A</newElementsIDs>
+<usedAttributes>
+<attributeRef>FA397672-4EC5-0E06-BA59-35F8C97E258A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

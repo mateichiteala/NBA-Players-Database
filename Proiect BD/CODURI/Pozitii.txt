@@ -1,0 +1,8 @@
+INSERT INTO pozitii(pozitie)
+VALUES('aruncator');
+INSERT INTO pozitii(pozitie)
+VALUES('extrema');
+INSERT INTO pozitii(pozitie)
+VALUES('pivot mic');
+INSERT INTO pozitii(pozitie)
+VALUES('conducator joc');

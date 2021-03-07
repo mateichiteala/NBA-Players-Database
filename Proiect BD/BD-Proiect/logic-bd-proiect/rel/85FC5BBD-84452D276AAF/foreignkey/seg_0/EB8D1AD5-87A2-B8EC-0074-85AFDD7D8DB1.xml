@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EB8D1AD5-87A2-B8EC-0074-85AFDD7D8DB1" containerWithKeyObject="873A7E82-61C9-468B-6FCB-7D7EE2C3A444" localFKIndex="702FF632-C5C5-59E9-16E8-22420116751A" name="juc_poz_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>B7DE9723-0BD0-39E0-2013-BE5D545BFBA7</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<referredTableLongName>Pozitii</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1FC5D770-A9A9-E8D5-5A72-4077CE53CDBB</referredTableID>
+<keyObject>B4505CF0-4204-E60E-58AD-F19A78A86D34</keyObject>
+<referredKeyID>B4505CF0-4204-E60E-58AD-F19A78A86D34</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pozitie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

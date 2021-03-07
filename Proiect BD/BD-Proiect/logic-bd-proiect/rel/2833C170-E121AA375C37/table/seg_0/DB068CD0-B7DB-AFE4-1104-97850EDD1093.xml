@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB068CD0-B7DB-AFE4-1104-97850EDD1093" name="sponsor_echipa_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Sponsor_id_sponsor" id="432E8CC4-51DD-2405-06FC-7E6C0112A808">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="457CFF2B-08F1-A5BE-11C8-E825738A8873" referredColumn="2E1391DD-34AA-4E25-08E1-1111149EA2FF"/>
+</associations>
+</Column>
+<Column name="Echipe_id_echipa" id="47801332-6559-B075-1316-E824E7C09430">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE80E7C0-A113-3632-EAF2-D0B8065EBEF4" referredColumn="0478CA62-D1BB-D43F-D6E6-2E37A20BD4EF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D448F38-598E-0D93-8797-8C620EB54A34" name="sponsor_echipa_fk_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="432E8CC4-51DD-2405-06FC-7E6C0112A808"/>
+<colUsage columnID="47801332-6559-B075-1316-E824E7C09430"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54C4FC99-72B0-B926-7135-7139792FFC99" name="sponsor_echipa_fk_Sponsor_FK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>CDD92178-5272-E0E3-1A32-074E8C253FE8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="432E8CC4-51DD-2405-06FC-7E6C0112A808"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67FC899E-EBA7-B6F4-3C27-D33E7A4ADB6E" name="sponsor_echipa_fk_Echipe_FK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-20 08:25:18 UTC</createdTime>
+<generatorID>CDD92178-5272-E0E3-1A32-074E8C253FE8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47801332-6559-B075-1316-E824E7C09430"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

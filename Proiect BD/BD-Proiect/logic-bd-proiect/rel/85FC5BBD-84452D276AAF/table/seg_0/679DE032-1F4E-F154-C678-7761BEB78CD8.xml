@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="679DE032-1F4E-F154-C678-7761BEB78CD8" name="Detalii_jucatori">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>E33CBAAF-B46D-DCDE-8125-FA165F76574F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cnp" id="22E7CF21-DB5F-AE22-E7A3-CDC27660B5BF">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>FA397672-4EC5-0E06-BA59-35F8C97E258A</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cnp) = 13"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_jucator" id="7F5A2131-7B58-6DE2-6CC6-34ABAF1BC00E">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>20853697-1D6A-1C07-8E92-34E22C6D62DD</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77D0C91F-D4E8-C910-6F1C-4D2765817054" referredColumn="E2A31654-E63F-E916-E545-86AA8E679E82"/>
+</associations>
+</Column>
+<Column name="data_nasterii" id="3220AF3A-6C02-A502-5753-F7C0DA3D7837">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>4C9A49CC-1DBA-BB6D-C46E-C22517CF877F</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tara" id="C45C5144-E3D3-843F-C110-2F50C8E22A0B">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>2E8F9B53-FAA3-047D-078C-B3667B3D5529</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(tara) &gt; 0 "/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="DB018585-C75D-FE0B-C8CB-26A59D6B20E9">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>64A77B8C-6E99-AC67-11F5-7AA6A68634D1</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(telefon) = 10 "/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="23DEADD9-909F-0123-C3A1-F0FBDCD41E00">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>5052DB5B-3D45-D7F0-116E-A6CE635EECBF</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="652AE597-2328-4509-CF7F-AA198D187F00" name="Detalii_jucatori_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>3DB96E48-43D5-7ABD-0766-BD4E511871C1</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22E7CF21-DB5F-AE22-E7A3-CDC27660B5BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="742B8639-DFBD-E9E9-20E5-B32359EA6A96" name="Detalii_jucatori__IDX">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DF35C3AB-D2B2-B323-3962-7BA0D2CCCF40</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7F5A2131-7B58-6DE2-6CC6-34ABAF1BC00E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DFC53F5-4C5F-8727-84E4-BEF9C71C0893" name="juc_det_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>DF35C3AB-D2B2-B323-3962-7BA0D2CCCF40</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F5A2131-7B58-6DE2-6CC6-34ABAF1BC00E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

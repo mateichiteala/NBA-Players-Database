@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="873A7E82-61C9-468B-6FCB-7D7EE2C3A444" name="Istorie">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>9BF5A9AF-1FE3-5A7B-F5D3-207AFF424165</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_istorie" id="C90A7926-EDC9-EB11-61F5-73B699B4AEEA">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>AD18F121-C29A-A2AC-B52B-306694869541</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_jucator" id="7E5760BC-9A17-53ED-6AED-BC58C8F2DA67">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>F82341DF-717B-AB92-680B-100952261CC8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42177667-10B4-92BD-82B5-0B1DFA3EBC03" referredColumn="E2A31654-E63F-E916-E545-86AA8E679E82"/>
+</associations>
+</Column>
+<Column name="id_echipa" id="886BD9D7-72B7-3CB4-4185-00F08E0629F1">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>EF2FD1CE-D25C-C877-0342-E9992D1DE973</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="987B994A-0A7F-29B8-B8A3-7ED5163C681A" referredColumn="43D1588C-A34C-7436-6076-B3977842C27B"/>
+</associations>
+</Column>
+<Column name="nr_meciuri" id="48E763B0-D173-4BE1-2EF1-463650041416">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>3CAD865E-3041-6828-D8B5-034EA341E0A3</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_meciuri &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pozitie" id="00C3F68D-CAA9-ADEC-7FD9-C0FE1D92934E">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>35C3F19C-BE68-2F95-860F-80AEDF7429A9</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB8D1AD5-87A2-B8EC-0074-85AFDD7D8DB1" referredColumn="02C2530D-AF38-E0F8-32EF-F937D3686BD7"/>
+</associations>
+</Column>
+<Column name="data_inceput" id="FBDF3CBB-23AF-480F-E6BE-3B34B08910B3">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>FA2FC699-A253-50D4-DC85-7C955B7CCB29</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_final" id="BAF701AD-4E57-F82C-0927-E8BD86D3CECB">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>8D5A7AF0-625F-EFA2-EE8F-F03530F60913</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2B874C9-B42C-CFF5-0E48-3E3330ED9D16" name="Istorie_PK">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>6168B6D0-A44B-4539-B808-9ADC86D6683E</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C90A7926-EDC9-EB11-61F5-73B699B4AEEA"/>
+<colUsage columnID="FBDF3CBB-23AF-480F-E6BE-3B34B08910B3"/>
+<colUsage columnID="BAF701AD-4E57-F82C-0927-E8BD86D3CECB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C18B886-17E3-9BD5-3831-5FF62B93270F" name="juc_ist_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>0DE0958C-2BB1-38BB-B56E-616DE3AF73DB</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E5760BC-9A17-53ED-6AED-BC58C8F2DA67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="702FF632-C5C5-59E9-16E8-22420116751A" name="juc_poz_fk">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>B7DE9723-0BD0-39E0-2013-BE5D545BFBA7</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00C3F68D-CAA9-ADEC-7FD9-C0FE1D92934E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F7FFF0A-A683-581D-7FA0-F991F596C1E3" name="Relation_15">
+<createdBy>Matei</createdBy>
+<createdTime>2021-01-07 07:54:24 UTC</createdTime>
+<generatorID>ABB0436B-7378-DD9A-32F1-5C1EBEB58AB8</generatorID>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="886BD9D7-72B7-3CB4-4185-00F08E0629F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

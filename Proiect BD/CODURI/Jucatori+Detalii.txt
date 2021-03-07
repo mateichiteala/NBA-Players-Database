@@ -1,0 +1,209 @@
+
+//LA LAKERS
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES(1, 'Lebron', 'James', 38, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Lebron'),'1234567891234','30-DEC-1984', 'US');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 1, 'Anthony', 'Davis', 28, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Anthony'),'2234567891234','11-MAR-1993', 'US','0734512312');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 1, 'Alex', 'Caruso', 2.8, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Alex'),'2234244891234','28-FEB-1994', 'US','0734589712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 1, 'Kyle', 'Kuzma', 2.2, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Kyle'),'2234567898334','24-JUL-1995', 'US','0798512312');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 1, 'Kentavious', 'Caldwell-Pope', 12, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara, email)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Kentavious'),'2236767898334','18-FEB-1993', 'US','kentCald@yahoo.com');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 1, 'JaVale', 'McGee', 4, 1);
+INSERT INTO detalii_jucatori( id_jucator,cnp, data_nasterii, tara, telefon, email)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'JaVale'),'2234567895324','19-JAN-1988', 'US','0798519912','jvMcGee@yahoo.com' );
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 1, 'Dwight', 'Howard', 2.8, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara, telefon,email)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Dwight'),'2234567898336','8-DEC-1985', 'US','0798952742', 'dwightHoward@yahoo.com');
+
+
+
+
+
+
+
+
+
+
+
+//BOSTON CELTICS
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES(2, 'Jayson', 'Tatum', 8, 0);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Jayson'),'1234357891234','3-MAR-1998', 'US');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES(2, 'Kemba', 'Walker', 12, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Kemba'),'2232667891234','8-MAY-1990', 'US','0734632312');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES(2, 'Jaylen', 'Brown', 6.6, 1);
+INSERT INTO detalii_jucatori(id_jucator, cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Jaylen'),'2231234891234','24-OCT-1996', 'US','0724589712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Tacko', 'Fall', 1.2, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Tacko'),'2234563218334','10-DEC-1995', 'US','0798712312');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Marcus', 'Smart', 12.5, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Marcus'),'2234577218334','6-MAR-1994', 'US','0762712312');
+
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Tristan', 'Thompson', 15.3, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Tristan'),'2234577228734','13-MAR-1991', 'US','0762719312');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Daniel', 'Theis', 5, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Daniel'),'2234527518334','4-APR-1992', 'US','0762712319');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Marcus', 'Smart', 12.5, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Marcus'),'2234577218334','6-MAR-1994', 'US','0762712312');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Aaron', 'Nesmith', 7.1, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Aaron'),'2234533218334','16-OCT-1999', 'Canada','0762712712');
+
+
+
+
+
+
+
+
+
+//Miami Heat
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 3, 'Jimmy', 'Butler', 16.4, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Jimmy'),'2234583218334','14-SEP-1989', 'US','0772712712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Tyler', 'Herro', 3.7, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Tyler'),'2234533219034','20-JAN-2000', 'Canada','0792712712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Bam', 'Adebayo', 5.1, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Bam'),'2234573248334','18-JUL-1997', 'US','0762713712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Duncan', 'Robinson', 1.6, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Duncan'),'2934533218334','22-APR-1994', 'Canada','0702712712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Goran', 'Dragic', 18, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Goran'),'2234535218334','6-MAY-1986', 'Slovenia','0787712712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Andre', 'Iguodala', 11.3, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Andre'),'2234563228334','28-JAN-1984', 'US','0762710212');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 2, 'Jae', 'Crowder', 7.1, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Jae'),'2234543278334','6-JUL-1990', 'US','0762780712');
+
+
+//Golden State
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 4, 'Stephen', 'Curry', 40.2, 0);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Stephen'),'2234583148334','14-MAR-1988', 'US','0782712712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 4, 'Klay', 'Thompson', 32.7, 0);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Klay'),'2234533219934','8-FEB-1990', 'US','0706712712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 4, 'Andrew', 'Wiggins', 29, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Andrew'),'2234573948334','23-FEB-1995', 'Canada','0762713702');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 4, 'Draymond', 'Green', 1.6, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Andrew'),'2034533218334','4-MAR-1990', 'US','0702012712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 4, 'James', 'Wiseman', 18, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'James'),'2234535218394','31-MAR-2001', 'US','0787756712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 4, 'Kelly', 'Oubre', 11.3, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Kelly'),'1234563228334','9-DEC-1995', 'US','0782719212');
+
+
+//Brooklyn Nets
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 5, 'Kevin', 'Durant', 27.2, 0);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE (prenume = 'Kevin' AND nume = 'Durant')),'2234585148334','29-SEP-1988', 'US','0782716712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 5, 'Kyrie', 'Irving', 20.1, 0);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Kyrie'),'1934533219934','23-MAR-1992', 'US','0706714712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 5, 'Jarret', 'Allen', 2.5, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Jarret'),'2234573049334','21-APR-1998', 'Canada','0727170209');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 5, 'DeAndre', 'Jordan', 15.3, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'DeAndre'),'1034537418334','21-JUL-1988', 'US','0702012002');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 5, 'Rodions', 'Kurucs', 1.6, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Rodions'),'194535218394','5-FEB-1998', 'Latvia','0780056712');
+
+INSERT INTO JUCATORI( id_echipa, prenume, nume, salariu, status)
+VALUES( 5, 'Spencer', 'Dinwiddie', 1.3, 1);
+INSERT INTO detalii_jucatori(id_jucator,cnp, data_nasterii, tara, telefon)
+VALUES((SELECT id_jucator FROM jucatori WHERE prenume = 'Spencer'),'1234563228004','9-APR-1993', 'US','0700719212');
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8FE5DD62-89A7-B555-6EEE-BDE0E047806C" name="Pozitii">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:42:43 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pozitie" id="1A339754-C1EB-B820-EDD3-EE261AA6ED05">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:42:50 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pozitie" id="22931BA5-4E88-7CAF-EBB1-C0F19D7FDA2D">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:43:10 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="aruncator" description=""/>
+<valueDef value="conducator joc" description=""/>
+<valueDef value="extrema" description=""/>
+<valueDef value="pivot" description=""/>
+<valueDef value="pivot mic" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D04AB749-156B-33AF-681D-61C6E18A3C5A" name="Pozitii PK UK">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 10:43:08 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>1A339754-C1EB-B820-EDD3-EE261AA6ED05</newElementsIDs>
+<usedAttributes>
+<attributeRef>1A339754-C1EB-B820-EDD3-EE261AA6ED05</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3E86D9A6-4C70-5858-54AA-118C0DABF9B5" name="Key_2">
+<createdBy>Matei</createdBy>
+<createdTime>2020-11-27 11:26:22 UTC</createdTime>
+<ownerDesignName>logic-bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="11A325E3-C7E5-A513-9C67-12C10477B6B8" value="true"/>
+</engineerTo>
+<newElementsIDs>22931BA5-4E88-7CAF-EBB1-C0F19D7FDA2D</newElementsIDs>
+<usedAttributes>
+<attributeRef>22931BA5-4E88-7CAF-EBB1-C0F19D7FDA2D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
